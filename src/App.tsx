@@ -1,19 +1,26 @@
-import { Link, Outlet } from 'react-router-dom';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Link to="/about">About</Link>
-        <Link to="/skills">Skills</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/work">Work</Link>
-        <Link to="/contact">Contact</Link>
-      </header>
-      <Outlet />
-    </div>
-  );
+import React, { Component } from 'react';
+import Header from './components/Header';
+import About from './components/About';
+import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
+import Testimonials from  './components/Testimonials';
+import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
+import resumeData from './resumeData';
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header resumeData={resumeData}/>
+        <About resumeData={resumeData}/>
+        <Resume resumeData={resumeData}/>
+        {/* <Portfolio resumeData={resumeData}/>
+        <Testimonials resumeData={resumeData}/>
+        <ContactUs resumeData={resumeData}/> */}
+        <Footer resumeData={resumeData}/>
+      </div>
+    );
+  }
 }
 
 export default App;
