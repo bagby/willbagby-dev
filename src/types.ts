@@ -28,6 +28,7 @@ export interface Education {
 export interface Portfolio {
   name:        string;
   description: string;
+  thumburl?:      string;
   imgurl:      string;
 }
 

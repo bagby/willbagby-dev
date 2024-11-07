@@ -145,24 +145,22 @@ let resumeData: ResumeData = {
     ],
     "portfolio":[
       {
-        "name":"project1",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
+        "name":"Drag & Drop with Custom Animation",
+        "description":"Testing interactions between hand-rolled drag & drop behavior and the ember-animation library",
+        "thumburl":"images/portfolio/tic-tac-toe.png",
+        "imgurl":"images/portfolio/tic-tac-toe-enhanced.mp4"
       },
       {
-        "name":"project2",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/project.jpg"
+        "name":"Daily Scheduler",
+        "description":"Built a hand-rolled daily and weekly scheduler using Ember.js for home care workers in Louisiana",
+        "thumburl":"images/portfolio/daily-schedule.png",
+        "imgurl":"images/portfolio/daily-schedule.mp4"
       },
       {
-        "name":"project3",
-        "description":"mobileapp",  
-        "imgurl":"images/portfolio/project2.png"
-      },
-      {
-        "name":"project4",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
+        "name":"Card Layout Builder",
+        "description":"Built a layout builder for creating custom layouts that sync with backend data, complete with editing capabilities.",
+        "thumburl":"images/portfolio/add-field-drag.png",
+        "imgurl":"images/portfolio/add-field-drag.mp4"
       }
     ],
     "testimonials":[
