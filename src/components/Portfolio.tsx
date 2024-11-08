@@ -7,7 +7,7 @@ function Portfolio(props: { resumeData: ResumeData }) {
     <section id="portfolio">
       <div className="row">
         <div className="twelve columns collapsed">
-          <h1>Check Out Some of My Works.</h1>
+          <h1>Selected Works</h1>
           <div
             id="portfolio-wrapper"
             className="bgrid-quarters s-bgrid-thirds cf"
@@ -17,8 +17,8 @@ function Portfolio(props: { resumeData: ResumeData }) {
                 return (
                   <div className="columns portfolio-item" key={index}>
                     <div className="item-wrap">
-                      <a href="#modal-01">
-                        <img src={`${item.imgurl}`} className="item-img" />
+                      <a href={item.imgurl}>
+                        <img src={`${item.thumburl}`} className="item-img" alt="Screenshot" />
                         <div className="overlay">
                           <div className="portfolio-item-meta">
                             <h5>{item.name}</h5>
